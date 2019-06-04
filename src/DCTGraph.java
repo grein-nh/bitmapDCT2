@@ -13,7 +13,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
 
 public class DCTGraph extends JFrame {
 
-  public static void DCTGraph (long durationLowPerf, long durationJTransform) {
+  public static void paintGraph (long durationLowPerf, long durationJTransform) {
 
 	  	//Create new chart
 	    JFreeChart chart = null;

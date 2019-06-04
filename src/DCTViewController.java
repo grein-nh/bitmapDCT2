@@ -261,7 +261,7 @@ public class DCTViewController {
 		System.out.println("Execution time of Jtransform DCT2: " + durationJtransform);
 		
 		//Paint timing Graph
-		DCTGraph.DCTGraph(durationLowperf, durationJtransform);
+		DCTGraph.paintGraph(durationLowperf, durationJtransform);
 
 		return matrix;
 	}

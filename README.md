@@ -22,7 +22,7 @@ Then the user enters 'F' and 'd' input parameters following those rules:
       - 'F' represents the size of the blocks in which the image will be splitted. E.g. if the image's dimension is 200x300 pixels and F=25,       it will be splitted in 96 blocks of 25x25 pixels. Then F should be < of image's width/height. Note: leftover image parts will be           discarted.
       - 'd' represents the limit value over which frequencies will be resetted on each block. E.g. if block size is 25x25 and d=0 all             frequencies will be resetted, on the other hand if d=(2F-2) no frequency value will be resetted. Then 'd' should be >= 0 and <= (2F-        2).
 
-Once user has pressed 'Compress' button, the program will perform those operations:
+  Once user has pressed 'Compress' button, the program will perform those operations:
       - a: transform the image in a matrix of doubles M (awt.image library). Each entry of the matrix represents the 'sample' of a                 specific pixel of the image.
       - b: split M on N blocks of FxF pixels and put them (with order) on a 3D array B. 
       - c: apply Jtransform DCT2 on each block of B

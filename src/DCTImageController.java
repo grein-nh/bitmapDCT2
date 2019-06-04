@@ -120,7 +120,7 @@ public class DCTImageController {
 		
 		
 		//Instantiate new JTransform DoubleDCT_2D matrix [F][F]
-		DoubleDCT_2D idct2 = new DoubleDCT_2D(1, 1);
+		DoubleDCT_2D idct2 = new DoubleDCT_2D(2, 2);
 		try {
 			idct2 = new DoubleDCT_2D(F, F);
 		}catch (Exception e){}

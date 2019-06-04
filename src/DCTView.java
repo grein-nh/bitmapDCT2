@@ -14,16 +14,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import javax.imageio.ImageIO;
-import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JSplitPane;
-import javax.swing.JTextField;
 import javax.swing.*;
 
 public class DCTView extends JFrame{
@@ -121,8 +111,8 @@ public class DCTView extends JFrame{
 					JOptionPane.showMessageDialog(null, "Input parameter is not a number!");
 					statusBarLabel.setText("Input parameter is not a number!"); //Update status bar
 				}catch (Exception excp2) {
-					JOptionPane.showMessageDialog(null, excp2.getMessage());
-					statusBarLabel.setText(excp2.getMessage()); //Update status bar
+					JOptionPane.showMessageDialog(null, "JTransform do not operate on blocks of 1 pixel!");
+					statusBarLabel.setText("JTransform do not operate on blocks of 1 pixel!"); //Update status bar
 				}
 			}
 			

@@ -4,22 +4,22 @@ Compress a bitmap image applying Discrete Cosine Transform algorithm on it.
 The software si written completely in Java language and the goal is to perform DCT technique on a raster (bitmap) image, in order to compress it as actually done by JPEG compression format.
 
 The software is composed by six classes:
-  -1: DCTMain --> Main class
-  -2: DCTView --> This is actually the GUI class. Provides graphic components as buttons and panels, receives actions and give         the       control to the Controller class.
-  -3: DCTViewController --> The controller class. Take actions from the user (view) and manage operations.
-  -4: DCTImageController --> This class perform actions on the actual image, e.g. transform image in pixel matrix and vice versa, execute         compression etc.
-  -5: DCTGraph --> Displays a bar chart to compare execution time between custom DCT2 algorithm and Jtransform library
-  -6: CustomDCT2 --> This class implements a custom DCT2 algorithm. Note: custom DCT algorithm is not a FFT version (Fast Fourier                 Transform)
+  - 1: DCTMain --> Main class
+  - 2: DCTView --> This is actually the GUI class. Provides graphic components as buttons and panels, receives actions and give         the       control to the Controller class.
+  - 3: DCTViewController --> The controller class. Take actions from the user (view) and manage operations.
+  - 4: DCTImageController --> This class perform actions on the actual image, e.g. transform image in pixel matrix and vice versa, execute         compression etc.
+  - 5: DCTGraph --> Displays a bar chart to compare execution time between custom DCT2 algorithm and Jtransform library
+  - 6: CustomDCT2 --> This class implements a custom DCT2 algorithm. Note: custom DCT algorithm is not a FFT version (Fast Fourier                 Transform)
   
  <b>User Guide<b>
  
  This software is divided in three parts:
  
-- 1: Execute DCT2 Test --> The user enters 'N' as input parameter and presses 'Execute DCT2' button. This creates an NxN random matrix of doubles, then perform the custom algorithm and the Jtranform DCT algorithm on that. Finally displays a bar chart to compare                execution time of both. Since the custom algorithm is not an FFT, its execution time should be close to N^3. Jtransform   DCT's              execution time should be close to N^2log(N) instead.
+ - 1: Execute DCT2 Test --> The user enters 'N' as input parameter and presses 'Execute DCT2' button. This creates an NxN random matrix of doubles, then perform the custom algorithm and the Jtranform DCT algorithm on that. Finally displays a bar chart to compare                execution time of both. Since the custom algorithm is not an FFT, its execution time should be close to N^3. Jtransform   DCT's              execution time should be close to N^2log(N) instead.
     
--2: Compress Image --> The user presses 'Select Image' button and choose a .bmp image from the file system. At this step the original        image is displayed on the left side of the window, while on the right side is displayed the original image after the execution of the Jtransform DCT2 algorithm on the whole image. 
+ - 2: Compress Image --> The user presses 'Select Image' button and choose a .bmp image from the file system. At this step the original        image is displayed on the left side of the window, while on the right side is displayed the original image after the execution of the Jtransform DCT2 algorithm on the whole image. 
 Then the user enters 'F' and 'd' input parameters following those rules: 
-      -'F' represents the size of the blocks in which the image will be splitted. E.g. if the image's dimension is 200x300 pixels and F=25,       it will be splitted in 96 blocks of 25x25 pixels. Then F should be < of image's width/height. Note: leftover image parts will be           discarted.
+      - 'F' represents the size of the blocks in which the image will be splitted. E.g. if the image's dimension is 200x300 pixels and F=25,       it will be splitted in 96 blocks of 25x25 pixels. Then F should be < of image's width/height. Note: leftover image parts will be           discarted.
       - 'd' represents the limit value over which frequencies will be resetted on each block. E.g. if block size is 25x25 and d=0 all             frequencies will be resetted, on the other hand if d=(2F-2) no frequency value will be resetted. Then 'd' should be >= 0 and <= (2F-        2).
 Once user has pressed 'Compress' button, the program will perform those operations:
       -a: transform the image in a matrix of doubles M (awt.image library). Each entry of the matrix represents the 'sample' of a                 specific pixel of the image.
@@ -31,7 +31,7 @@ Once user has pressed 'Compress' button, the program will perform those operatio
       -g: transform M in an image (awt.image library)
       -h: display the compressed image on the right side of the window
       
--3: Verify DCT2 --> The user presses 'Verify DCT2' button. Now the program evaluates both custom/Jtransform DCT2 scaling algorithm on the following matrix and vector:
+ - 3: Verify DCT2 --> The user presses 'Verify DCT2' button. Now the program evaluates both custom/Jtransform DCT2 scaling algorithm on the following matrix and vector:
 
 matrix A -->
 
@@ -70,4 +70,4 @@ vector B -->
 This is all. Feel free to use and share this software which is under MIT licence.
 
 
-      
+      fgsdgsddsFFGGSD      

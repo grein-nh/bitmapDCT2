@@ -15,7 +15,7 @@ The software is composed by six classes:
  
  This software is divided in three parts:
  
- - 1: Execute DCT2 Test --> The user enters 'N' as input parameter and presses 'Execute DCT2' button. This creates an NxN random matrix of doubles, then perform the custom algorithm and the Jtranform DCT algorithm on that. Finally displays a bar chart to compare                execution time of both. Since the custom algorithm is not an FFT, its execution time should be close to N^3. Jtransform   DCT's              execution time should be close to N^2log(N) instead.
+ - 1: Execute DCT2 Test --> The user enters 'N' as input parameter and presses 'Execute DCT2' button. This creates an NxN random matrix of doubles, then perform custom DCT and Jtranform DCT on that. Finally displays a bar chart to compare                execution time of both. Since the custom algorithm is not an FFT, its execution time should be close to N^3. Jtransform   DCT's              execution time should be close to N^2log(N) instead.
     
  - 2: Compress Image --> The user presses 'Select Image' button and choose a .bmp image from the file system. At this step the original        image is displayed on the left side of the window, while on the right side is displayed the original image after the execution of the Jtransform DCT2 algorithm on the whole image. 
 Then the user enters 'F' and 'd' input parameters following those rules: 

@@ -1,7 +1,7 @@
 # bitmap DCT2 Java
 Compress a bitmap image applying Discrete Cosine Transform algorithm on it.
 
-This software si written completely in Java language and the goal is to perform DCT technique on a raster (bitmap) image, in order to compress it as actually done by JPEG compression format.
+This software is completely written in Java language and the goal is to perform DCT technique on a raster (bitmap) image, in order to compress it as actually done by JPEG compression format.
 
 The software is composed by six classes:
   - 1: DCTMain --> Main class

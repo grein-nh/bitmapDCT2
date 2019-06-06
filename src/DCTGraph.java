@@ -24,18 +24,18 @@ public class DCTGraph extends JFrame {
 	    ds.addValue(durationJTransform, "Library","JTransform");
 	
 	    //Instanciate a barChart
-	    chart = ChartFactory.createBarChart("", "Time execution comparison", "BarChart", ds, PlotOrientation.VERTICAL, true, true, false);
+	    chart = ChartFactory.createBarChart("", "DCT2 Version", "BarChart", ds, PlotOrientation.VERTICAL, true, true, false);
 	
 	    CategoryPlot plot = (CategoryPlot) chart.getPlot();                    
 	
 	    //Declare logarithmic Y axis
-	    LogarithmicAxis axis = new LogarithmicAxis("Time (microseconds)");
+	    LogarithmicAxis axis = new LogarithmicAxis("log ( Time [microseconds] )");
 	    axis.setAutoRange(true);
 	    axis.setAllowNegativesFlag(true);
 	    plot.setRangeAxis(axis);
 	    
 	    //Show chart frame
-	    ChartFrame chartFrame = new ChartFrame("Time Execution Table", chart);
+	    ChartFrame chartFrame = new ChartFrame("Time Execution Chart", chart);
 	    chartFrame.setVisible(true);
 	    chartFrame.setSize(800, 650);
 

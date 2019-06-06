@@ -23,8 +23,8 @@ public class CustomDCT2 {
 				//sum will temporarily store the sum of cosine signals 
 				for (int i = 0; i < f.length; i++){
 				  for (int j = 0; j < f[0].length; j++){            	
-					sum = sum + (Math.cos((((2 * i + 1) * u * Math.PI)/(2.0 * f.length))) * 
-								Math.cos((((2 * j+1) * v * Math.PI)/(2.0 * f.length))) * f[i][j]);
+					sum = sum + (Math.cos(( ((2 * i + 1) * u * Math.PI)/(2.0 * f.length))) * 
+								Math.cos((((2 * j + 1) * v * Math.PI)/(2.0 * f.length))) * f[i][j]);
 				  }
 				}
 				//if 'f' is not an array

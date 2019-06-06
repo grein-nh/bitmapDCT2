@@ -58,7 +58,7 @@ public class DCTView extends JFrame{
 		//Set window properties
 		this.setExtendedState(JFrame.MAXIMIZED_BOTH); //Maximize on start
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE); //Exit on close
-		this.setTitle("DCT: Discrete Cosine Transform on Raster images");
+		this.setTitle("Image Compression using DCT Algorithm");
 		//Initialize components
 		this.initializeTopBar();
 		this.initializeOriginalImagePanel();
